@@ -10,7 +10,7 @@ import ribbonconfiguration.RibbonConfiguration;
  * @Date 2020/4/9 4:08 下午
  **/
 
-@Configuration
-@RibbonClient(name = "user-center", configuration = RibbonConfiguration.class)
+//@Configuration
+//@RibbonClient(name = "user-center", configuration = RibbonConfiguration.class)
 public class UserCenterRibbonConfiguration {
 }

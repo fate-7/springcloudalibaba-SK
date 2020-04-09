@@ -14,3 +14,7 @@ spring:
 
   application:
     name: content-center
+
+user-center:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
