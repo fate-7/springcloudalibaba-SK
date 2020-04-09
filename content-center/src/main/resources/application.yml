@@ -11,6 +11,11 @@ spring:
         server-addr: localhost:8848
 #        namespace: ff0f6e94-b1ac-41a8-8adb-5dad8ba6736f
         cluster-name: BJ
+        metadata:
+          # 自己这个实例的版本
+          version: v1
+          # 允许调用的提供者版本
+          target-version: v1
 
   application:
     name: content-center
