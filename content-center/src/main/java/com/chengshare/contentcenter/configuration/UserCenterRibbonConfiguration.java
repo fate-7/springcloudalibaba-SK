@@ -20,6 +20,6 @@ import ribbonconfiguration.RibbonConfiguration;
 //@Configuration
 //@RibbonClient(name = "user-center", configuration = RibbonConfiguration.class)
 //全局配置
-@RibbonClients(defaultConfiguration = NacosWeightedRule.class)
+@RibbonClients(defaultConfiguration = RibbonConfiguration.class)
 public class UserCenterRibbonConfiguration {
 }

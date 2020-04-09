@@ -1,5 +1,6 @@
 package ribbonconfiguration;
 
+import com.chengshare.contentcenter.configuration.NacosSameClusterWeightedRule;
 import com.netflix.loadbalancer.IPing;
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.PingUrl;
@@ -22,7 +23,7 @@ public class RibbonConfiguration {
 
     @Bean
     public IRule ribbonRule() {
-        return new RandomRule();
+        return new NacosSameClusterWeightedRule();
     }
 
     @Bean

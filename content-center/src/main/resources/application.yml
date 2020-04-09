@@ -10,7 +10,7 @@ spring:
       discovery:
         server-addr: localhost:8848
 #        namespace: ff0f6e94-b1ac-41a8-8adb-5dad8ba6736f
-#        cluster-name: BJ
+        cluster-name: BJ
 
   application:
     name: content-center
