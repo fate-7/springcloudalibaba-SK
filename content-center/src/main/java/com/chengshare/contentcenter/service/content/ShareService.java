@@ -39,7 +39,6 @@ public class ShareService {
         //发布人id
         Integer userId = share.getUserId();
 
-
         //调用用户微服务的/users/{userId}
         UserDTO userDTO = restTemplate.getForObject(
                 "http://user-center/users/{userId}", UserDTO.class, userId);
