@@ -18,3 +18,9 @@ spring:
 #user-center:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+#默认使用懒加载，改为饥饿加载
+ribbon:
+  eager-load:
+    enabled: true
+    clients: user-center
