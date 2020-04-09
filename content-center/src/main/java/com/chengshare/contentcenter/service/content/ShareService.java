@@ -39,21 +39,10 @@ public class ShareService {
         //发布人id
         Integer userId = share.getUserId();
 
-        List<ServiceInstance> instances = discoveryClient.getInstances("user-center");
-        List<String> targetUrls = instances.stream()
-                .map(instance -> instance.getUri().toString() + "/users/{id}")
-                .collect(Collectors.toList());
-
-//                .findFirst()
-//                .orElseThrow(() -> new IllegalArgumentException("当前没有实例!"));
-        int targetIndex = ThreadLocalRandom.current().nextInt(targetUrls.size());
-
-        String targetUrl = targetUrls.get(targetIndex);
-        log.info("请求的目标地址={}", targetUrl);
 
         //调用用户微服务的/users/{userId}
         UserDTO userDTO = restTemplate.getForObject(
-                targetUrl, UserDTO.class, userId);
+                "http://user-center/users/{userId}", UserDTO.class, userId);
         //消息装配
         ShareDTO shareDTO = new ShareDTO();
         BeanUtils.copyProperties(share, shareDTO);
