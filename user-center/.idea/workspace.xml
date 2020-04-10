@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="" />
+    <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/UserCenterFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/ContentCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/ContentCenterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/service/content/ShareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/service/content/ShareService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -30,6 +40,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1aD0C9if9nlMfW83RY2Syc1v2ze" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="flattenModules" value="true" />
@@ -44,6 +55,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -51,6 +63,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -60,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserCenterApplication2">
+  <component name="RunManager" selected="Spring Boot.UserCenterApplication">
     <configuration name="UserCenterApplicationTests.testUserInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="user-center" />
       <extension name="coverage">
@@ -110,7 +123,7 @@
     <configuration name="UserCenterApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user-center" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.chengshare.usercenter.UserCenterApplication" />
-      <option name="VM_PARAMETERS" value="-Dserver.port=8081" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8011" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,42 +148,42 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="320" y="102" key="#Inspections/0.23.1440.828@0.23.1440.828" timestamp="1586256921337" />
-    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586417225534">
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586442597399">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1586417225534" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1586437122218">
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1586442597399" />
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1586444306436">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586437122218" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1586437122217">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586444306436" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1586444306435">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1586437122217" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1586437122216">
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1586444306435" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1586444306435">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1586437122216" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1586437122217">
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1586444306435" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1586444306435">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1586437122217" />
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1586437122220">
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1586444306435" />
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1586444306437">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586437122220" />
-    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1586437122219">
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586444306437" />
+    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1586444306436">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1586437122219" />
-    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1586437122218">
+    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1586444306436" />
+    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1586444306436">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1586437122218" />
-    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1586437122219">
+    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1586444306436" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1586444306436">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1586437122219" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1586444306436" />
     <state x="258" y="99" key="Maven.ArtifactSearchDialog" timestamp="1586256831952">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

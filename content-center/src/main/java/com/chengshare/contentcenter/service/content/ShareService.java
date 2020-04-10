@@ -4,18 +4,13 @@ import com.chengshare.contentcenter.dao.content.ShareMapper;
 import com.chengshare.contentcenter.domain.dto.content.ShareDTO;
 import com.chengshare.contentcenter.domain.dto.user.UserDTO;
 import com.chengshare.contentcenter.domain.entity.content.Share;
+import com.chengshare.contentcenter.feignclient.UserCenterFeignClient;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
-import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.stream.Collectors;
 
 /**
  * @Author fate7
@@ -29,9 +24,7 @@ public class ShareService {
 
     private final ShareMapper shareMapper;
 
-    private final RestTemplate restTemplate;
-
-    private final DiscoveryClient discoveryClient;
+    private final UserCenterFeignClient userCenterFeignClient;
 
     public ShareDTO findbyId(Integer id) {
         //获取分享详情
@@ -40,8 +33,7 @@ public class ShareService {
         Integer userId = share.getUserId();
 
         //调用用户微服务的/users/{userId}
-        UserDTO userDTO = restTemplate.getForObject(
-                "http://user-center/users/{userId}", UserDTO.class, userId);
+        UserDTO userDTO = this.userCenterFeignClient.findById(userId);
         //消息装配
         ShareDTO shareDTO = new ShareDTO();
         BeanUtils.copyProperties(share, shareDTO);
