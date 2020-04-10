@@ -20,6 +20,9 @@ spring:
   application:
     name: content-center
 
+  main:
+    allow-bean-definition-overriding: true
+
 #user-center:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
@@ -42,3 +45,5 @@ feign:
       # 全局配置 /指定服务名
       default: #user-center:
         LoggerLevel: full
+
+
