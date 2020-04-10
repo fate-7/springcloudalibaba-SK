@@ -24,7 +24,7 @@ public class RibbonConfiguration {
 
     @Bean
     public IRule ribbonRule() {
-        return new NacosFinalRule();
+        return new NacosSameClusterWeightedRule();
     }
 
     @Bean
