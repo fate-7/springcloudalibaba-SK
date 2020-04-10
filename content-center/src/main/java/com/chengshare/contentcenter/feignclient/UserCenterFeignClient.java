@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @Date 2020/4/10 1:56 下午
  **/
 
-@FeignClient(name = "user-center", configuration = UserCenterFeignConfiguration.class)
+//@FeignClient(name = "user-center", configuration = UserCenterFeignConfiguration.class)
+@FeignClient(name = "user-center")
 public interface UserCenterFeignClient {
 
     /**

@@ -1,5 +1,6 @@
 package com.chengshare.contentcenter;
 
+import com.chengshare.contentcenter.configuration.GlobalFeignConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -10,6 +11,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @MapperScan("com.chengshare")
+//全局配置
+//@EnableFeignClients(defaultConfiguration = GlobalFeignConfiguration.class)
 @EnableFeignClients
 public class ContentCenterApplication {
 

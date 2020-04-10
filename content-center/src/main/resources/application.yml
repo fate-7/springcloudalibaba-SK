@@ -29,8 +29,16 @@ ribbon:
   eager-load:
     enabled: true
     clients: user-center
+
 logging:
   level:
     com.chengshare: debug
     #feign的日志级别建立在feign接口是debug级别之上的
     com.chengshare.contentcenter.feignclient.UserCenterFeignClient: debug
+
+feign:
+  client:
+    config:
+      # 全局配置 /指定服务名
+      default: #user-center:
+        LoggerLevel: full
