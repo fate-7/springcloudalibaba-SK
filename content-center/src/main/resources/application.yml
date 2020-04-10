@@ -45,5 +45,11 @@ feign:
       # 全局配置 /指定服务名
       default: #user-center:
         LoggerLevel: full
-
+  #性能增强，使用apache的httpclient而不是默认的urlconnection
+  httpclient:
+    enabled: true
+    #feign最大连接数
+    max-connections: 200
+    #feign单个路径的连接数
+    max-connections-per-route: 50
 
