@@ -20,8 +20,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -158,5 +160,13 @@ public class TestController {
 
         return a;
 
+    }
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @GetMapping("/test-restTemple-sentinel/{userId}")
+    public UserDTO test(@PathVariable Integer userId) {
+        return this.restTemplate.getForObject("http://user-center/users/{userId}", UserDTO.class, userId);
     }
 }

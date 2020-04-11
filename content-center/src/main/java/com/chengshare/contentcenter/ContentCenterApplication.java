@@ -1,6 +1,9 @@
 package com.chengshare.contentcenter;
 
-import com.chengshare.contentcenter.configuration.GlobalFeignConfiguration;
+import com.alibaba.cloud.sentinel.annotation.SentinelRestTemplate;
+import com.chengshare.sentineltest.TestControllerBlockHandlerClass;
+import com.chengshare.sentineltest.TestControllerFallbackHandlerClass;
+import com.chengshare.sentineltest.TestControllerRestTempleSentiel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -22,6 +25,13 @@ public class ContentCenterApplication {
 
     @Bean
     @LoadBalanced
+    //restTemple整合Sentinel
+    @SentinelRestTemplate(
+            blockHandler = "block",
+            blockHandlerClass = TestControllerRestTempleSentiel.class,
+            fallback = "fallback",
+            fallbackClass = TestControllerRestTempleSentiel.class
+            )
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }

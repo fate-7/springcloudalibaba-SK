@@ -66,3 +66,7 @@ management:
       exposure:
         include: '*'
 
+resttemplate:
+  sentinel:
+    #关闭resttemplate注解
+    enabled: false
