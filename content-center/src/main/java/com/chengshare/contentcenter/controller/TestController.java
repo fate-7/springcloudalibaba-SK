@@ -146,7 +146,8 @@ public class TestController {
             value = "test-sentinel-resource",
             blockHandler = "block",
             blockHandlerClass = TestControllerBlockHandlerClass.class,
-            fallback = "fallback")
+            fallback = "fallback",
+            fallbackClass = TestControllerFallbackHandlerClass.class)
     public String testSentinelAPITo(@RequestParam(required = false) String a) {
 
         //被保护的业务逻辑
@@ -157,19 +158,5 @@ public class TestController {
 
         return a;
 
-    }
-
-
-
-    /**
-     * 处理降级
-     *  - sentinel1.6处理throwable?
-     * @param a
-     * @param e
-     * @return
-     */
-    public String fallback(String a){
-        log.warn("降级 fallback");
-        return "降级 fallback";
     }
 }
