@@ -13,6 +13,8 @@ import com.chengshare.contentcenter.domain.dto.user.UserDTO;
 import com.chengshare.contentcenter.feignclient.TestBaiduFeignClient;
 import com.chengshare.contentcenter.feignclient.TestFeignClient;
 import com.chengshare.contentcenter.service.TestService;
+import com.chengshare.sentineltest.TestControllerBlockHandlerClass;
+import com.chengshare.sentineltest.TestControllerFallbackHandlerClass;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
@@ -136,5 +138,38 @@ public class TestController {
             }
             ContextUtil.exit();
         }
+    }
+
+    @GetMapping("/test-sentinel-resource")
+    //降级处理方法,必须和保护的方法有相同类型的返回值以及相同类型的参数
+    @SentinelResource(
+            value = "test-sentinel-resource",
+            blockHandler = "block",
+            blockHandlerClass = TestControllerBlockHandlerClass.class,
+            fallback = "fallback")
+    public String testSentinelAPITo(@RequestParam(required = false) String a) {
+
+        //被保护的业务逻辑
+        if(StringUtils.isBlank(a)) {
+            //降级处理默认只处理BlockException
+            throw new IllegalArgumentException("a cannot be block.");
+        }
+
+        return a;
+
+    }
+
+
+
+    /**
+     * 处理降级
+     *  - sentinel1.6处理throwable?
+     * @param a
+     * @param e
+     * @return
+     */
+    public String fallback(String a){
+        log.warn("降级 fallback");
+        return "降级 fallback";
     }
 }
