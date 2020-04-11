@@ -16,6 +16,10 @@ spring:
           version: v1
           # 允许调用的提供者版本
           target-version: v1
+    #整合sentinel控制台
+    sentinel:
+      transport:
+        dashboard: localhost:8020
 
   application:
     name: content-center
@@ -52,4 +56,10 @@ feign:
     max-connections: 200
     #feign单个路径的连接数
     max-connections-per-route: 50
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 

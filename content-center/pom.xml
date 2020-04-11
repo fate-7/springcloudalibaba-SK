@@ -39,6 +39,21 @@
             <artifactId>feign-httpclient</artifactId>
         </dependency>
 
+        <!--服务容错 sentinel
+            轻量级的流量控制
+            熔断降级
+            开放/actuator/sentinel端口
+            -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper-spring-boot-starter</artifactId>
