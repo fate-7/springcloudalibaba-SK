@@ -19,8 +19,8 @@ spring:
     #整合sentinel控制台
     sentinel:
       filter:
-        #关闭掉对SpringMVC端点的保护
-        enabled: false
+        #开启/关闭对SpringMVC端点的保护
+        enabled: true
       transport:
         dashboard: localhost:8020
 
