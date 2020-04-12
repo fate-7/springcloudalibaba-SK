@@ -1,9 +1,11 @@
 package com.chengshare.contentcenter.feignclient;
 
 import com.chengshare.contentcenter.domain.dto.user.UserDTO;
+import com.chengshare.contentcenter.feignclient.fallback.UserCenterFeignClientFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @Author fate7
@@ -13,6 +15,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface TestFeignClient {
 
     //多参数
-    @GetMapping("/q")
+    @GetMapping(value = "/q")
     public UserDTO query(@SpringQueryMap UserDTO userDTO);
 }

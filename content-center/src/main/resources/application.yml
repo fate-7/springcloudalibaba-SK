@@ -59,6 +59,9 @@ feign:
     max-connections: 200
     #feign单个路径的连接数
     max-connections-per-route: 50
+  #版本问题
+  sentinel:
+    enabled: true
 
 management:
   endpoints:
