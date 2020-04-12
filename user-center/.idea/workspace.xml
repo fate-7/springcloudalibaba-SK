@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/fallback/UserCenterFeignClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/fallbackFactory/UserCenterFeignClientFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/FileDataSourceInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/resources/META-INF/services/com.alibaba.csp.sentinel.init.InitFunc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/TestFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/TestFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/UserCenterFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/UserCenterFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
