@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/mq/MySource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/mq/MySink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/ContentCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/ContentCenterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/UserCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/UserCenterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/mq/TestStreamConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/mq/TestStreamConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/UserCenterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/UserCenterApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/mq/TestStreamConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/mq/TestStreamConsumer.class" afterDir="false" />
-    </list>
+    <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,38 +169,38 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1586442597399" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1586775570579">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1586778107360">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586775570579" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1586775570578">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586778107360" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1586778107360">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1586775570578" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1586775570578">
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1586778107360" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1586778107360">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1586775570578" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1586775570579">
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1586778107360" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1586778107360">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1586775570579" />
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1586775570581">
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1586778107360" />
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1586778107362">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586775570581" />
-    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1586775570580">
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586778107362" />
+    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1586778107361">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1586775570580" />
-    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1586775570580">
+    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1586778107361" />
+    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1586778107361">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1586775570580" />
-    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1586775570580">
+    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1586778107361" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1586778107361">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1586775570580" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1586778107361" />
     <state x="258" y="99" key="Maven.ArtifactSearchDialog" timestamp="1586256831952">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
