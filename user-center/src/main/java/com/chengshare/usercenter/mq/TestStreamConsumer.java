@@ -18,4 +18,8 @@ public class TestStreamConsumer {
         log.info("收到的消息={}", messageBody);
     }
 
+    @StreamListener(MySink.MY_INPUT)
+    public void receivemy(String messageBody) {
+        log.info("收到的消息2my={}", messageBody);
+    }
 }

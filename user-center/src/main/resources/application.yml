@@ -25,6 +25,9 @@ spring:
         input:
           destination: stream-test-topic
           content-type: application/json
+        my-input:
+          destination: stream-my-topic
+          content-type: application/json
 
   application:
     name: user-center

@@ -1,6 +1,7 @@
 package com.chengshare.contentcenter;
 
 import com.alibaba.cloud.sentinel.annotation.SentinelRestTemplate;
+import com.chengshare.contentcenter.mq.MySource;
 import com.chengshare.sentineltest.TestControllerBlockHandlerClass;
 import com.chengshare.sentineltest.TestControllerFallbackHandlerClass;
 import com.chengshare.sentineltest.TestControllerRestTempleSentiel;
@@ -15,11 +16,11 @@ import org.springframework.web.client.RestTemplate;
 import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-@MapperScan("com.chengshare")
+@MapperScan("com.chengshare.contentcenter.dao")
 //全局配置
 //@EnableFeignClients(defaultConfiguration = GlobalFeignConfiguration.class)
 @EnableFeignClients
-@EnableBinding(Source.class)
+@EnableBinding({Source.class, MySource.class})
 public class ContentCenterApplication {
 
     public static void main(String[] args) {
