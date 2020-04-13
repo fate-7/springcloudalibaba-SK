@@ -25,4 +25,3 @@ public class MyRequestOriginParser implements RequestOriginParser {
         return origin;
     }
 }
-}
