@@ -19,6 +19,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.stream.messaging.Source;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -168,5 +170,15 @@ public class TestController {
     @GetMapping("/test-restTemple-sentinel/{userId}")
     public UserDTO test(@PathVariable Integer userId) {
         return this.restTemplate.getForObject("http://user-center/users/{userId}", UserDTO.class, userId);
+    }
+
+
+    @Autowired
+    private Source source;
+
+    @GetMapping("/stream-test")
+    public String testStream() {
+        this.source.output().send(MessageBuilder.withPayload("消息体").build());
+        return "success";
     }
 }

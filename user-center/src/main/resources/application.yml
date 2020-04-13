@@ -20,6 +20,11 @@ spring:
         metadata:
           # 自己这个实例的版本
           version: v1
+    stream:
+      bindings:
+        input:
+          destination: stream-test-topic
+          content-type: application/json
 
   application:
     name: user-center
