@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/MyUrlCleaner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/SentinelInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/MyRequestOriginParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/MyRequestOriginParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/content/ShareAdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/domain/dto/content/ShareAudioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/domain/dto/enums/AuditStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/domain/dto/message/UserAddBonusMsgDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/dao/BonusEventLog/BonusEventLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/domain/dto/message/UserAddBonusMsgDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/domain/entity/BonusEventLog/BonusEventLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/listener/AddBonusListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/chengshare/usercenter/dao/BonusEventLog/BonusEventLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/service/content/ShareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/service/content/ShareService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/ribbonconfiguration/RibbonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/ribbonconfiguration/RibbonConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generator/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generator/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user-center.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +62,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1aD0C9if9nlMfW83RY2Syc1v2ze" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="flattenModules" value="true" />
@@ -47,6 +73,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -67,9 +94,26 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.chengshare.usercenter.dao.user" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.chengshare.usercenter.domain.dto.message" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 2 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 2 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="user-center" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="RunManager" selected="Spring Boot.UserCenterApplication">
     <configuration name="UserCenterApplicationTests.testUserInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -141,6 +185,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="320" y="102" key="#Inspections" timestamp="1586256921337">
       <screen x="0" y="23" width="1440" height="828" />
@@ -150,38 +197,38 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1586442597399" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1586615678551">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1586766771206">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586615678551" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1586615678550">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586766771206" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1586766771205">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1586615678550" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1586615678550">
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1586766771205" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1586766771205">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1586615678550" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1586615678551">
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1586766771205" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1586766771206">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1586615678551" />
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1586615678552">
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1586766771206" />
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1586766771207">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586615678552" />
-    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1586615678552">
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586766771207" />
+    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1586766771206">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1586615678552" />
-    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1586615678551">
+    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1586766771206" />
+    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1586766771206">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1586615678551" />
-    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1586615678552">
+    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1586766771206" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1586766771207">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1586615678552" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1586766771207" />
     <state x="258" y="99" key="Maven.ArtifactSearchDialog" timestamp="1586256831952">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
