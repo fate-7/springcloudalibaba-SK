@@ -1,10 +1,7 @@
 package com.chengshare.contentcenter;
 
 import com.alibaba.cloud.sentinel.annotation.SentinelRestTemplate;
-import com.chengshare.contentcenter.mq.MySource;
-import com.chengshare.sentineltest.TestControllerBlockHandlerClass;
-import com.chengshare.sentineltest.TestControllerFallbackHandlerClass;
-import com.chengshare.sentineltest.TestControllerRestTempleSentiel;
+import com.chengshare.contentcenter.sentineltest.TestControllerRestTempleSentiel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -20,7 +17,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 //全局配置
 //@EnableFeignClients(defaultConfiguration = GlobalFeignConfiguration.class)
 @EnableFeignClients
-@EnableBinding({Source.class, MySource.class})
+@EnableBinding({Source.class})
 public class ContentCenterApplication {
 
     public static void main(String[] args) {

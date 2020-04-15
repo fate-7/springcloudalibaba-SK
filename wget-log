@@ -1,0 +1,19 @@
+Will not apply HSTS. The HSTS database must be a regular and non-world-writable file.
+ERROR: could not open HSTS store at '/Users/fate7/.wget-hsts'. HSTS will be disabled.
+--2020-04-11 16:42:17--  https://github.com/alibaba/Sentinel/releases/download/1.6.3/sentinel-dashboard-1.6.3.jar
+Connecting to 127.0.0.1:1087... connected.
+Proxy request sent, awaiting response... No data received.
+Retrying.
+
+--2020-04-11 16:43:20--  (try: 2)  https://github.com/alibaba/Sentinel/releases/download/1.6.3/sentinel-dashboard-1.6.3.jar
+Connecting to 127.0.0.1:1087... connected.
+Proxy request sent, awaiting response... No data received.
+Retrying.
+
+--2020-04-11 16:43:38--  (try: 3)  https://github.com/alibaba/Sentinel/releases/download/1.6.3/sentinel-dashboard-1.6.3.jar
+Connecting to 127.0.0.1:1087... connected.
+Proxy request sent, awaiting response... No data received.
+Retrying.
+
+--2020-04-15 16:05:47--  (try: 4)  https://github.com/alibaba/Sentinel/releases/download/1.6.3/sentinel-dashboard-1.6.3.jar
+Connecting to 127.0.0.1:1087... failed: Connection refused.

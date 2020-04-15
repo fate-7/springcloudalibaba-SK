@@ -16,6 +16,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.Objects;
 
@@ -66,6 +67,7 @@ public class ShareService {
         //审核资源，将状态设为PASS/REJECT
 
         share.setAuditStatus(audioDTO.getAuditStatusEnum().toString());
+        share.setReason(audioDTO.getReason());
         this.shareMapper.updateByPrimaryKey(share);
 
         //如果是PASS，那么为发布人添加积分 -> 异步执行MQ

@@ -1,11 +1,10 @@
-package com.chengshare.sentineltest;
+package com.chengshare.contentcenter.sentineltest;
 
 import com.alibaba.cloud.sentinel.rest.SentinelClientHttpResponse;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.client.ClientHttpRequestExecution;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * @Author fate7

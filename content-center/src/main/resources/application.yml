@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: content-center
   datasource:
     url: jdbc:mysql://localhost:3306/content_center
     hikari:
@@ -16,12 +18,6 @@ spring:
       discovery:
         server-addr: localhost:8848
 #        namespace: ff0f6e94-b1ac-41a8-8adb-5dad8ba6736f
-        cluster-name: BJ
-        metadata:
-          # 自己这个实例的版本
-          version: v1
-          # 允许调用的提供者版本
-          target-version: v1
     #整合sentinel控制台
     sentinel:
       filter:
@@ -34,12 +30,9 @@ spring:
         output:
           destination: stream-test-topic
           content-type: application/json
-        my-ouptut:
-          destination: stream-my-topic
-          content-type: application/json
-
-  application:
-    name: content-center
+#        my-ouptut:
+#          destination: stream-my-topic
+#          content-type: application/json
 
   main:
     allow-bean-definition-overriding: true
@@ -83,8 +76,3 @@ management:
     web:
       exposure:
         include: '*'
-
-resttemplate:
-  sentinel:
-    #关闭resttemplate注解
-    enabled: false

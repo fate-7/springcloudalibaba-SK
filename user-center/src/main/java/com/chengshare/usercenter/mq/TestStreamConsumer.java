@@ -18,12 +18,7 @@ public class TestStreamConsumer {
     @StreamListener(Sink.INPUT)
     public void receive(String messageBody) {
         log.info("收到的消息={}", messageBody);
-        throw new IllegalArgumentException("参数异常");
-    }
-
-    @StreamListener(MySink.MY_INPUT)
-    public void receivemy(String messageBody) {
-        log.info("收到的消息2my={}", messageBody);
+        //throw new IllegalArgumentException("参数异常");
     }
 
     @StreamListener("errorChannel")

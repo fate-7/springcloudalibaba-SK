@@ -12,10 +12,9 @@ import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
 import com.chengshare.contentcenter.domain.dto.user.UserDTO;
 import com.chengshare.contentcenter.feignclient.TestBaiduFeignClient;
 import com.chengshare.contentcenter.feignclient.TestFeignClient;
-import com.chengshare.contentcenter.mq.MySource;
 import com.chengshare.contentcenter.service.TestService;
-import com.chengshare.sentineltest.TestControllerBlockHandlerClass;
-import com.chengshare.sentineltest.TestControllerFallbackHandlerClass;
+import com.chengshare.contentcenter.sentineltest.TestControllerBlockHandlerClass;
+import com.chengshare.contentcenter.sentineltest.TestControllerFallbackHandlerClass;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
@@ -184,15 +183,6 @@ public class TestController {
         return "success";
     }
 
-    @Autowired
-    private MySource mySource;
-
-    @GetMapping("/stream-test2")
-    public String testStream2() {
-        UserDTO userDTO = UserDTO.builder().id(1).wxNickname("chengzhiqi2").build();
-        this.mySource.output().send(MessageBuilder.withPayload(userDTO).build());
-        return "success";
-    }
 
 
 }
