@@ -21,6 +21,7 @@ spring:
           #filter的断点调试org.springframework.cloud.gateway.filter.NettyRoutingFilter.filter
           filters:
             - AddRequestHeader=X-Request-Foo, Bar
+            - PreLog=a, b
 management:
   endpoints:
     web:
