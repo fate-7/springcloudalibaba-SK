@@ -2,41 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-1-After.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-10-Query2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-11-RemoteAddr.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-2-Before.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-3-Between.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-4-Cookie.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-5-Header.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-6-Host.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-7-Method.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-8-Path.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/predicate/application-9-Query1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/ContentCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/ContentCenterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/configuration/UserCenterRibbonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/configuration/UserCenterRibbonConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/UserCenterFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/UserCenterFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/mq/MySource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/service/content/ShareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/service/content/ShareService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/MyRequestOriginParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/sentineltest/MyRequestOriginParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/MyUrlBlockHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/sentineltest/MyUrlBlockHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/MyUrlCleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/sentineltest/MyUrlCleaner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/TestControllerBlockHandlerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/sentineltest/TestControllerBlockHandlerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/TestControllerFallbackHandlerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/sentineltest/TestControllerFallbackHandlerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/sentineltest/TestControllerRestTempleSentiel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/sentineltest/TestControllerRestTempleSentiel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/chengshare/gateway/TimeBetweenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/chengshare/gateway/TimeBetweenRoutePredicateFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/UserCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/UserCenterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/controller/user/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/mq/MySink.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/mq/TestStreamConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/mq/TestStreamConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/UserCenterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/UserCenterApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/controller/user/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/mq/MySink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/mq/TestStreamConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/mq/TestStreamConsumer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
