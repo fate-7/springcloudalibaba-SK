@@ -17,6 +17,10 @@ spring:
           predicates:
             - After=2010-01-20T17:42:47.789-07:00[America/Denver]
             - TimeBetween=上午9:00, 下午5:00
+          #GatewayFilter Factories https://www.imooc.com/article/290816
+          #filter的断点调试org.springframework.cloud.gateway.filter.NettyRoutingFilter.filter
+          filters:
+            - AddRequestHeader=X-Request-Foo, Bar
 management:
   endpoints:
     web:
@@ -25,3 +29,11 @@ management:
   endpoint:
     health:
       show-details: always
+
+logging:
+  level:
+    #gateway请求细节
+    org.springframework.cloud.gateway: trace
+    org.springframework.http.server.reactive: debug
+    org.springframework.web.reactive: debug
+    reactor.ipc.netty: debug
