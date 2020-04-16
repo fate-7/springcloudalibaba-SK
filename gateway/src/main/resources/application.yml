@@ -22,6 +22,11 @@ spring:
           filters:
             - AddRequestHeader=X-Request-Foo, Bar
             - PreLog=a, b
+
+#/actuator/gateway/下
+# globalfilters 展示所有的全局过滤器
+# routefilters 展示所有的过滤器工厂
+# routes  展示路由列表
 management:
   endpoints:
     web:
