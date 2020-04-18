@@ -2,9 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/chengshare/gateway/PreLogGatewayFilterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/chengshare/gateway/PreLogGatewayFilterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/util/JwtOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_binarywang_weixin_java_common_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_binarywang_weixin_java_miniapp_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_10_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_10_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_10_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/configuration/WxConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/domain/dto/user/JwtTokenRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/domain/dto/user/LoginRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/domain/dto/user/UserLoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/domain/dto/user/UserRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/util/JwtOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_59.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_59.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/controller/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/controller/user/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/service/user/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user-center.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +58,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,6 +138,19 @@
     </treeState>
   </component>
   <component name="RunManager" selected="Spring Boot.UserCenterApplication">
+    <configuration name="JwtOperator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chengshare.usercenter.util.JwtOperator" />
+      <module name="user-center" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chengshare.usercenter.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserCenterApplicationTests.testUserInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="user-center" />
       <extension name="coverage">
@@ -168,9 +210,11 @@
       <item itemvalue="JUnit.UserCenterApplicationTests.testUserInsert" />
       <item itemvalue="Spring Boot.UserCenterApplication" />
       <item itemvalue="Spring Boot.UserCenterApplication2" />
+      <item itemvalue="Application.JwtOperator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JwtOperator" />
         <item itemvalue="JUnit.UserCenterApplicationTests.testUserInsert" />
       </list>
     </recent_temporary>
@@ -190,38 +234,38 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1586442597399" />
-    <state width="1398" height="266" key="GridCell.Tab.0.bottom" timestamp="1586961294434">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1587223217984">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586961294434" />
-    <state width="1398" height="266" key="GridCell.Tab.0.center" timestamp="1586961294433">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587223217984" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1587223217984">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1586961294433" />
-    <state width="1398" height="266" key="GridCell.Tab.0.left" timestamp="1586961294433">
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1587223217984" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1587223217983">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1586961294433" />
-    <state width="1398" height="266" key="GridCell.Tab.0.right" timestamp="1586961294434">
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1587223217983" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1587223217984">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1586961294434" />
-    <state width="1398" height="266" key="GridCell.Tab.1.bottom" timestamp="1586961294435">
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1587223217984" />
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1587223217985">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1586961294435" />
-    <state width="1398" height="266" key="GridCell.Tab.1.center" timestamp="1586961294434">
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587223217985" />
+    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1587223217984">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1586961294434" />
-    <state width="1398" height="266" key="GridCell.Tab.1.left" timestamp="1586961294434">
+    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1587223217984" />
+    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1587223217984">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1586961294434" />
-    <state width="1398" height="266" key="GridCell.Tab.1.right" timestamp="1586961294434">
+    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1587223217984" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1587223217985">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1586961294434" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1587223217985" />
     <state width="1398" height="266" key="GridCell.Tab.2.bottom" timestamp="1586961294435">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
