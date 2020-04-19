@@ -12,6 +12,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 import tk.mybatis.spring.annotation.MapperScan;
 
+import java.util.Collections;
+
 @SpringBootApplication
 @MapperScan("com.chengshare.contentcenter.dao")
 //全局配置
@@ -34,6 +36,8 @@ public class ContentCenterApplication {
             fallbackClass = TestControllerRestTempleSentiel.class
             )
     public RestTemplate restTemplate() {
-        return new RestTemplate();
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.setInterceptors(Collections.singletonList(new TestRestTemplateTokenRelayInterceptor()));
+        return restTemplate;
     }
 }

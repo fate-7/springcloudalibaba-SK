@@ -20,6 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.messaging.Source;
+import org.springframework.http.*;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -183,6 +185,28 @@ public class TestController {
         return "success";
     }
 
+    /**
+     * 使用restTemplate.exchange方法实现token传递,缺点需要改动代码
+     * @param userId
+     * @param request
+     * @return
+     */
+    @GetMapping("/tokenRelay/{userId}")
+    public ResponseEntity<UserDTO> testToken(@PathVariable Integer userId, HttpServletRequest request) {
+        String token = request.getHeader("X-Token");
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("X-Token", token);
+        ResponseEntity<UserDTO> entity = this.restTemplate.exchange(
+                "http://user-center/users/{userId}",
+                HttpMethod.GET,
+                new HttpEntity<>(httpHeaders),
+                UserDTO.class,
+                userId);
+        return entity;
+    }
 
-
+    @GetMapping("/tokenRelay2/{userId}")
+    public UserDTO testToken2(@PathVariable Integer userId) {
+        return this.restTemplate.getForObject("http://user-center/users/{userId}", UserDTO.class, userId);
+    }
 }
