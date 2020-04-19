@@ -1,5 +1,6 @@
 package com.chengshare.contentcenter.controller.content;
 
+import com.chengshare.contentcenter.auth.CheckLogin;
 import com.chengshare.contentcenter.domain.dto.content.ShareDTO;
 import com.chengshare.contentcenter.service.content.ShareService;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +22,7 @@ public class ShareController {
     private final ShareService shareService;
 
     @GetMapping("/{id}")
+    @CheckLogin
     public ShareDTO findById(@PathVariable Integer id) {
         return shareService.findbyId(id);
     }
