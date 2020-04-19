@@ -26,7 +26,7 @@ public class ShareAdminController {
     @CheckAuthorization("admin")
     public Share auditById(@PathVariable Integer id, @RequestBody ShareAudioDTO audioDTO) {
 
-        //TODO 认证授权
+        //认证授权
 
         return this.shareService.auditById(id, audioDTO);
     }

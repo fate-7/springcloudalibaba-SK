@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/auth/AuthAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/auth/CheckAuthorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/auth/CheckAuthorization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/auth/CheckLoginAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/auth/AuthAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/auth/GlobalExceptionErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/auth/GlobalExceptionErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/AuthAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/CheckAuthorization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/content/ShareAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/content/ShareAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/auth/CheckLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/auth/CheckLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/auth/CheckLoginAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/auth/GlobalExceptionErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/auth/GlobalExceptionErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chengshare/usercenter/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/CheckLoginAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/GlobalExceptionErrorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/GlobalExceptionErrorHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/controller/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/controller/user/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,54 +220,54 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.828@0.23.1440.828" timestamp="1587282987606" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1587282630688">
+    <state width="1398" height="266" key="GridCell.Tab.0.bottom" timestamp="1587291757038">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587282630688" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1587282630687">
+    <state width="1398" height="266" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587291757038" />
+    <state width="1398" height="266" key="GridCell.Tab.0.center" timestamp="1587291757038">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1587282630687" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1587282630687">
+    <state width="1398" height="266" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1587291757038" />
+    <state width="1398" height="266" key="GridCell.Tab.0.left" timestamp="1587291757037">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1587282630687" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1587282630688">
+    <state width="1398" height="266" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1587291757037" />
+    <state width="1398" height="266" key="GridCell.Tab.0.right" timestamp="1587291757038">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1587282630688" />
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1587282630689">
+    <state width="1398" height="266" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1587291757038" />
+    <state width="1398" height="266" key="GridCell.Tab.1.bottom" timestamp="1587291810907">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587282630689" />
-    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1587282630688">
+    <state width="1398" height="266" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587291810907" />
+    <state width="1398" height="266" key="GridCell.Tab.1.center" timestamp="1587291810906">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1587282630688" />
-    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1587282630688">
+    <state width="1398" height="266" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1587291810906" />
+    <state width="1398" height="266" key="GridCell.Tab.1.left" timestamp="1587291810905">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1587282630688" />
-    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1587282630689">
+    <state width="1398" height="266" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1587291810905" />
+    <state width="1398" height="266" key="GridCell.Tab.1.right" timestamp="1587291810906">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1587282630689" />
-    <state width="1398" height="266" key="GridCell.Tab.2.bottom" timestamp="1587278203410">
+    <state width="1398" height="266" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1587291810906" />
+    <state width="1398" height="266" key="GridCell.Tab.2.bottom" timestamp="1587291756697">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.2.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587278203410" />
-    <state width="1398" height="266" key="GridCell.Tab.2.center" timestamp="1587278203409">
+    <state width="1398" height="266" key="GridCell.Tab.2.bottom/0.23.1440.828@0.23.1440.828" timestamp="1587291756697" />
+    <state width="1398" height="266" key="GridCell.Tab.2.center" timestamp="1587291756696">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.2.center/0.23.1440.828@0.23.1440.828" timestamp="1587278203409" />
-    <state width="1398" height="266" key="GridCell.Tab.2.left" timestamp="1587278203409">
+    <state width="1398" height="266" key="GridCell.Tab.2.center/0.23.1440.828@0.23.1440.828" timestamp="1587291756696" />
+    <state width="1398" height="266" key="GridCell.Tab.2.left" timestamp="1587291756696">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.2.left/0.23.1440.828@0.23.1440.828" timestamp="1587278203409" />
-    <state width="1398" height="266" key="GridCell.Tab.2.right" timestamp="1587278203410">
+    <state width="1398" height="266" key="GridCell.Tab.2.left/0.23.1440.828@0.23.1440.828" timestamp="1587291756696" />
+    <state width="1398" height="266" key="GridCell.Tab.2.right" timestamp="1587291756697">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="266" key="GridCell.Tab.2.right/0.23.1440.828@0.23.1440.828" timestamp="1587278203410" />
+    <state width="1398" height="266" key="GridCell.Tab.2.right/0.23.1440.828@0.23.1440.828" timestamp="1587291756697" />
     <state x="258" y="99" key="Maven.ArtifactSearchDialog" timestamp="1586256831952">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

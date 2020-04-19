@@ -12,16 +12,14 @@ spring:
           # 让gateway通过服务发现组件找到其他的微服务
           enabled: true
       routes:
-        - id: after_route
+        - id: user_route
           uri: lb://user-center
           predicates:
-            - After=2010-01-20T17:42:47.789-07:00[America/Denver]
-            - TimeBetween=上午9:00, 下午5:00
-          #GatewayFilter Factories https://www.imooc.com/article/290816
-          #filter的断点调试org.springframework.cloud.gateway.filter.NettyRoutingFilter.filter
-          filters:
-            - AddRequestHeader=X-Request-Foo, Bar
-            - PreLog=a, b
+            - Path=/users/**
+        - id: content_route
+          uri: lb://content-center
+          predicates:
+            - Path=/shares/**,/admin/**
 
 #/actuator/gateway/下
 # globalfilters 展示所有的全局过滤器
