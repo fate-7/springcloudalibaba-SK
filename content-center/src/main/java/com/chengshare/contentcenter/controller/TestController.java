@@ -19,6 +19,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.http.*;
 import org.springframework.messaging.support.MessageBuilder;
@@ -38,6 +40,7 @@ import java.util.List;
  **/
 @Slf4j
 @RestController
+@RefreshScope
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class TestController {
 
@@ -208,5 +211,13 @@ public class TestController {
     @GetMapping("/tokenRelay2/{userId}")
     public UserDTO testToken2(@PathVariable Integer userId) {
         return this.restTemplate.getForObject("http://user-center/users/{userId}", UserDTO.class, userId);
+    }
+
+    @Value("${your.configuration}")
+    private String yourConfiguration;
+
+    @GetMapping("/yourConfiguration")
+    public String getYourConfiguration() {
+        return this.yourConfiguration;
     }
 }

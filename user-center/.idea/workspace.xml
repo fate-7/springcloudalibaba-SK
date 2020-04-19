@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/AuthAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/CheckAuthorization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/content/ShareAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/content/ShareAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/CheckLoginAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/GlobalExceptionErrorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/auth/GlobalExceptionErrorHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/controller/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chengshare/usercenter/controller/user/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

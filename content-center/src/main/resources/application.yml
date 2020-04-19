@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: content-center
   datasource:
     url: jdbc:mysql://localhost:3306/content_center
     hikari:
@@ -17,7 +15,7 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-#        namespace: ff0f6e94-b1ac-41a8-8adb-5dad8ba6736f
+    #        namespace: ff0f6e94-b1ac-41a8-8adb-5dad8ba6736f
     #整合sentinel控制台
     sentinel:
       filter:
