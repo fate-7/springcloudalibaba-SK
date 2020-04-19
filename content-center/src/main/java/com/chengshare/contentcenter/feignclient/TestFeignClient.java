@@ -1,7 +1,7 @@
 package com.chengshare.contentcenter.feignclient;
 
 import com.chengshare.contentcenter.domain.dto.user.UserDTO;
-import com.chengshare.contentcenter.feignclient.fallback.UserCenterFeignClientFallback;
+//import com.chengshare.contentcenter.feignclient.fallback.UserCenterFeignClientFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.web.bind.annotation.GetMapping;
