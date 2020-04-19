@@ -8,13 +8,13 @@ import org.springframework.stereotype.Component;
  * @Author fate7
  * @Date 2020/4/11 11:26 下午
  **/
-//@Component
-//public class UserCenterFeignClientFallback  implements UserCenterFeignClient {
-//
-//    @Override
-//    public UserDTO findById(Integer id) {
-//        UserDTO userDTO = new UserDTO();
-//        userDTO.setWxNickname("一个新用户");
-//        return userDTO;
-//    }
-//}
+@Component
+public class UserCenterFeignClientFallback  implements UserCenterFeignClient {
+
+    @Override
+    public UserDTO findById(Integer id) {
+        UserDTO userDTO = new UserDTO();
+        userDTO.setWxNickname("一个新用户");
+        return userDTO;
+    }
+}

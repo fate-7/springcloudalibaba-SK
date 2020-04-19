@@ -60,6 +60,8 @@ feign:
       # 全局配置 /指定服务名
       default: #user-center:
         LoggerLevel: full
+        requestInterceptors:
+          - com.chengshare.contentcenter.feignclient.interceptor.TokenRelayRequestIntercepor
   #性能增强，使用apache的httpclient而不是默认的urlconnection
   httpclient:
     enabled: true

@@ -37,14 +37,14 @@ public class ShareService {
 
     private final AmqpTemplate amqpTemplate;
 
-    public ShareDTO findbyId(Integer id, String token) {
+    public ShareDTO findbyId(Integer id) {
         //获取分享详情
         Share share = shareMapper.selectByPrimaryKey(id);
         //发布人id
         Integer userId = share.getUserId();
 
         //调用用户微服务的/users/{userId}
-        UserDTO userDTO = this.userCenterFeignClient.findById(userId, token);
+        UserDTO userDTO = this.userCenterFeignClient.findById(userId);
         //消息装配
         ShareDTO shareDTO = new ShareDTO();
         BeanUtils.copyProperties(share, shareDTO);

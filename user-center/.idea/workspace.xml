@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbfa8562-b2a3-42b0-8ca7-d42e0b583a74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/interceptor/TokenRelayRequestIntercepor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/content/ShareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/controller/content/ShareController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/TestFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/TestFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/UserCenterFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/UserCenterFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/fallback/UserCenterFeignClientFallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/fallback/UserCenterFeignClientFallback.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/fallbackFactory/UserCenterFeignClientFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/feignclient/fallbackFactory/UserCenterFeignClientFallbackFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/service/content/ShareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/java/com/chengshare/contentcenter/service/content/ShareService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-center/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
