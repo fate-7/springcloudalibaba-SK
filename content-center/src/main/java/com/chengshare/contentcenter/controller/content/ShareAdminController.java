@@ -1,6 +1,7 @@
 package com.chengshare.contentcenter.controller.content;
 
 import com.alibaba.fastjson.JSON;
+import com.chengshare.contentcenter.auth.CheckAuthorization;
 import com.chengshare.contentcenter.domain.dto.content.ShareAudioDTO;
 import com.chengshare.contentcenter.domain.entity.content.Share;
 import com.chengshare.contentcenter.service.content.ShareService;
@@ -22,9 +23,11 @@ public class ShareAdminController {
 
 
     @PutMapping("/audit/{id}")
+    @CheckAuthorization("admin")
     public Share auditById(@PathVariable Integer id, @RequestBody ShareAudioDTO audioDTO) {
 
         //TODO 认证授权
+
         return this.shareService.auditById(id, audioDTO);
     }
 }

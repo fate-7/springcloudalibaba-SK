@@ -2,7 +2,6 @@ package com.chengshare.usercenter.controller.user;
 
 import cn.binarywang.wx.miniapp.api.WxMaService;
 import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
-import com.chengshare.usercenter.auth.CheckLogin;
 import com.chengshare.usercenter.domain.dto.user.JwtTokenRespDTO;
 import com.chengshare.usercenter.domain.dto.user.LoginRespDTO;
 import com.chengshare.usercenter.domain.dto.user.UserLoginDTO;
@@ -37,7 +36,6 @@ public class UserController {
     private final JwtOperator jwtOperator;
 
     @GetMapping("/{id}")
-    @CheckLogin
     public User findById(@PathVariable Integer id) {
         log.info("我被调用了...");
         return userService.findById(id);
@@ -52,8 +50,8 @@ public class UserController {
         Map<String, Object> userInfo = new HashMap<>();
         userInfo.put("id", 1);
         userInfo.put("wxNickname", "chengzhiqi");
-        userInfo.put("role", "user");
-        return this.jwtOperator.generateToken(userInfo);
+        userInfo.put("role", "admin");
+        return "X-Token: " + this.jwtOperator.generateToken(userInfo);
     }
 
     @PostMapping("/login")
