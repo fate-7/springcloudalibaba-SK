@@ -46,12 +46,13 @@ public class AddBonusListener{
         user.setBonus(bonus);
         this.userMapper.updateByPrimaryKey(user);
         //2. 记录日志到bonus_event_log表中
-        this.bonusEventLogMapper.insert(BonusEventLog.builder()
+        this.bonusEventLogMapper.insert(
+                BonusEventLog.builder()
                 .userId(userAddBonusMsgDTO.getUserId())
                 .value(userAddBonusMsgDTO.getBonus())
-                .event("CONTRIBUTE")
+                .event(userAddBonusMsgDTO.getEvent())
                 .createTime(new Date())
-                .description("投稿加积分.")
+                .description(userAddBonusMsgDTO.getDescription())
                 .build());
     }
 }

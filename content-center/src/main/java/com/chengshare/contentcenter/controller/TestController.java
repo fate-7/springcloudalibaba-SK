@@ -12,18 +12,19 @@ import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
 import com.chengshare.contentcenter.domain.dto.user.UserDTO;
 import com.chengshare.contentcenter.feignclient.TestBaiduFeignClient;
 import com.chengshare.contentcenter.feignclient.TestFeignClient;
-import com.chengshare.contentcenter.service.TestService;
 import com.chengshare.contentcenter.sentineltest.TestControllerBlockHandlerClass;
 import com.chengshare.contentcenter.sentineltest.TestControllerFallbackHandlerClass;
+import com.chengshare.contentcenter.service.TestService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.cloud.stream.messaging.Source;
-import org.springframework.http.*;
-import org.springframework.messaging.support.MessageBuilder;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -178,15 +179,15 @@ public class TestController {
     }
 
 
-    @Autowired
-    private Source source;
-
-    @GetMapping("/stream-test")
-    public String testStream() {
-        UserDTO userDTO = UserDTO.builder().id(1).wxNickname("chengzhiqi").build();
-        this.source.output().send(MessageBuilder.withPayload(userDTO).build());
-        return "success";
-    }
+//    @Autowired
+//    private Source source;
+//
+//    @GetMapping("/stream-test")
+//    public String testStream() {
+//        UserDTO userDTO = UserDTO.builder().id(1).wxNickname("chengzhiqi").build();
+//        this.source.output().send(MessageBuilder.withPayload(userDTO).build());
+//        return "success";
+//    }
 
     /**
      * 使用restTemplate.exchange方法实现token传递,缺点需要改动代码

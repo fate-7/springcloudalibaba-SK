@@ -1,28 +1,22 @@
-package com.chengshare.contentcenter.domain.dto.message;
+package com.chengshare.contentcenter.domain.dto.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-
 /**
  * @Author fate7
- * @Date 2020/4/13 3:41 下午
+ * @Date 2020/4/20 2:27 下午
  **/
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserAddBonusMsgDTO implements Serializable {
+public class UserAddBonseDTO {
 
     private Integer userId;
 
     private Integer bonus;
-
-    private String description;
-
-    private String event;
 }

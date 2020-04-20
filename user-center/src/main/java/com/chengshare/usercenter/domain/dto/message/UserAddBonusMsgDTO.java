@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-
 /**
  * @Author fate7
  * @Date 2020/4/13 3:41 下午
@@ -21,4 +19,8 @@ public class UserAddBonusMsgDTO {
     private Integer userId;
 
     private Integer bonus;
+
+    private String description;
+
+    private String event;
 }

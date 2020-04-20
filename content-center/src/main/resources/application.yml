@@ -23,11 +23,11 @@ spring:
         enabled: true
       transport:
         dashboard: localhost:8020
-    stream:
-      bindings:
-        output:
-          destination: stream-test-topic
-          content-type: application/json
+#    stream:
+#      bindings:
+#        output:
+#          destination: stream-test-topic
+#          content-type: application/json
 #        my-ouptut:
 #          destination: stream-my-topic
 #          content-type: application/json
@@ -47,7 +47,7 @@ ribbon:
 
 logging:
   level:
-    com.chengshare: debug
+    com.chengshare.contentcenter.dao.content: debug
     #feign的日志级别建立在feign接口是debug级别之上的
     com.chengshare.contentcenter.feignclient.UserCenterFeignClient: debug
     com.alibaba.nacos: error
@@ -81,3 +81,8 @@ jwt:
   secret: abc
   # 有效期，单位秒，默认2周
   expire-time-in-second: 1209600
+
+#mybatis字段映射
+#mybatis:
+#  configuration:
+#    map-underscore-to-camel-case: true

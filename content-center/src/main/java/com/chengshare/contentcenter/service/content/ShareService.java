@@ -1,14 +1,19 @@
 package com.chengshare.contentcenter.service.content;
 
 import com.alibaba.fastjson.JSONObject;
+import com.chengshare.contentcenter.dao.content.MidUserShareMapper;
 import com.chengshare.contentcenter.dao.content.ShareMapper;
 import com.chengshare.contentcenter.domain.dto.content.ShareAudioDTO;
 import com.chengshare.contentcenter.domain.dto.content.ShareDTO;
-import com.chengshare.contentcenter.domain.dto.enums.AuditStatusEnum;
+import com.chengshare.contentcenter.domain.dto.content.ShareRequestDTO;
 import com.chengshare.contentcenter.domain.dto.message.UserAddBonusMsgDTO;
+import com.chengshare.contentcenter.domain.dto.user.UserAddBonseDTO;
 import com.chengshare.contentcenter.domain.dto.user.UserDTO;
+import com.chengshare.contentcenter.domain.entity.content.MidUserShare;
 import com.chengshare.contentcenter.domain.entity.content.Share;
 import com.chengshare.contentcenter.feignclient.UserCenterFeignClient;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.AmqpTemplate;
@@ -16,9 +21,12 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 
 /**
@@ -32,6 +40,8 @@ import java.util.Objects;
 public class ShareService {
 
     private final ShareMapper shareMapper;
+
+    private final MidUserShareMapper midUserShareMapper;
 
     private final UserCenterFeignClient userCenterFeignClient;
 
@@ -81,9 +91,140 @@ public class ShareService {
 
         this.amqpTemplate.convertAndSend("add-bouns",
                 JSONObject.toJSONString(
-                        UserAddBonusMsgDTO.builder().userId(share.getUserId()).bonus(50).build()
+                        UserAddBonusMsgDTO.builder()
+                                .userId(share.getUserId())
+                                .bonus(50)
+                                .description("发布文章")
+                                .event("CONTENRIBUTE")
+                                .build()
                 ));
         return share;
 
     }
+
+    public PageInfo<Share> q(String title, Integer pageNo, Integer pageSize, Integer userId) {
+        //用户未登录 downloadUrl全部设置未空
+
+        //如果用户登录但是在mid_user_share表中不存在，置为downloadUrl为空
+        PageHelper.startPage(pageNo, pageSize);
+        List<Share> shares = this.shareMapper.selectByParam(title);
+
+        List<Share> shareDealed;
+        if (userId == null) {
+            shareDealed = shares.stream().peek(share -> {
+                share.setDownloadUrl(null);
+            }).collect(Collectors.toList());
+        } else {
+            shareDealed = shares.stream().peek(share -> {
+                MidUserShare midUserShare = this.midUserShareMapper.selectOne(
+                        MidUserShare.builder()
+                                .shareId(share.getId())
+                                .userId(userId)
+                                .build()
+                );
+                if (midUserShare == null) {
+                    share.setDownloadUrl(null);
+                }
+            }).collect(Collectors.toList());
+        }
+        return new PageInfo<>(shareDealed);
+
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    public Share exchangeById(Integer id, HttpServletRequest request) {
+        Share share = this.shareMapper.selectByPrimaryKey(id);
+        if (share == null) {
+            throw new IllegalArgumentException("该分享不存在");
+        }
+
+        Integer userId = (Integer) request.getAttribute("id");
+        Integer price = share.getPrice();
+
+
+        MidUserShare midUserShare = this.midUserShareMapper.selectOne(
+                MidUserShare.builder()
+                        .userId(userId)
+                        .shareId(id)
+                        .build()
+        );
+        //如果用户已兑换过直接返回
+        if (midUserShare != null) {
+            return share;
+        }
+
+        UserDTO userDTO = this.userCenterFeignClient.findById(userId);
+        if (userDTO.getBonus() < price) {
+            throw new IllegalArgumentException("用户积分不够");
+        }
+        share.setBuyCount(share.getBuyCount() + 1);
+        this.shareMapper.updateByPrimaryKey(share);
+        this.userCenterFeignClient.addBonus(
+                UserAddBonseDTO.builder().userId(userId).bonus(0 - price).build()
+        );
+        this.midUserShareMapper.insert(
+                MidUserShare.builder()
+                        .userId(userId)
+                        .shareId(id)
+                        .build()
+        );
+
+        return share;
+    }
+
+    public Share createContribute(ShareRequestDTO shareRequestDTO, HttpServletRequest request) {
+        Integer userId = (Integer) request.getAttribute("id");
+        String auditStatus = "NOT_YET";
+        Boolean showFlag = false;
+
+        Share share = new Share();
+
+        BeanUtils.copyProperties(shareRequestDTO, share);
+        share.setBuyCount(0);
+        share.setUserId(userId);
+        share.setAuditStatus(auditStatus);
+        share.setShowFlag(showFlag);
+        share.setCreateTime(new Date());
+        share.setUpdateTime(new Date());
+        this.shareMapper.insertSelective(share);
+        return this.shareMapper.selectOne(share);
+    }
+
+    public Share updateContribute(Integer id, ShareRequestDTO shareRequestDTO, HttpServletRequest request) {
+        Share share = this.shareMapper.selectByPrimaryKey(id);
+        if (share == null) {
+            throw new IllegalArgumentException("该分享不存在");
+        }
+
+        Integer userId = (Integer) request.getAttribute("id");
+        String auditStatus = "NOT_YET";
+        Boolean showFlag = false;
+
+        BeanUtils.copyProperties(shareRequestDTO, share);
+        share.setAuditStatus(auditStatus);
+        share.setShowFlag(showFlag);
+        share.setUpdateTime(new Date());
+        this.shareMapper.updateByPrimaryKeySelective(share);
+        return share;
+    }
+
+    public List<Share> myShares(HttpServletRequest request) {
+        Integer userId = (Integer) request.getAttribute("id");
+        List<MidUserShare> select = this.midUserShareMapper.select(MidUserShare.builder().userId(userId).build());
+        List<Integer> shareIds = select.stream().map(midUserShare -> midUserShare.getShareId()).collect(Collectors.toList());
+        List<Share> shares = shareIds.stream().map(shareId -> {
+            return this.shareMapper.selectByPrimaryKey(shareId);
+        }).collect(Collectors.toList());
+        return shares;
+    }
+
+    public List<Share> myContributions(HttpServletRequest request) {
+        Integer userId = (Integer) request.getAttribute("id");
+        return this.shareMapper.select(Share.builder().userId(userId).build());
+    }
+
+    public Share preview(Integer id) {
+        return this.shareMapper.selectByPrimaryKey(id);
+    }
 }
+

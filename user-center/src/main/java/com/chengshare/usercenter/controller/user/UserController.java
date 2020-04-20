@@ -2,6 +2,8 @@ package com.chengshare.usercenter.controller.user;
 
 import cn.binarywang.wx.miniapp.api.WxMaService;
 import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
+import com.chengshare.usercenter.auth.CheckLogin;
+import com.chengshare.usercenter.domain.dto.bonus.BonusDTO;
 import com.chengshare.usercenter.domain.dto.user.JwtTokenRespDTO;
 import com.chengshare.usercenter.domain.dto.user.LoginRespDTO;
 import com.chengshare.usercenter.domain.dto.user.UserLoginDTO;
@@ -16,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -41,6 +44,24 @@ public class UserController {
         return userService.findById(id);
     }
 
+    @GetMapping("/me")
+    @CheckLogin
+    public User findme(@RequestHeader("X-Token") String token) {
+        return userService.me(token);
+    }
+
+
+    @GetMapping("/sign")
+    @CheckLogin
+    public User sign(@RequestHeader("X-Token") String token) {
+        return userService.sign(token);
+    }
+
+    @GetMapping("/bonus-logs")
+    @CheckLogin
+    public List<BonusDTO>  bonusLogs(@RequestHeader("X-Token") String token) {
+        return userService.bonusLogs(token);
+    }
     /**
      * 模拟生成token
      * @return

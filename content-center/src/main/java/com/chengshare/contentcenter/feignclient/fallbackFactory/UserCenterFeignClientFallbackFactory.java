@@ -1,5 +1,6 @@
 package com.chengshare.contentcenter.feignclient.fallbackFactory;
 
+import com.chengshare.contentcenter.domain.dto.user.UserAddBonseDTO;
 import com.chengshare.contentcenter.domain.dto.user.UserDTO;
 import com.chengshare.contentcenter.feignclient.UserCenterFeignClient;
 import feign.hystrix.FallbackFactory;
@@ -23,6 +24,12 @@ public class UserCenterFeignClientFallbackFactory implements FallbackFactory<Use
                 UserDTO userDTO = new UserDTO();
                 userDTO.setWxNickname("一个新用户");
                 return userDTO;
+            }
+
+            @Override
+            public UserDTO addBonus(UserAddBonseDTO userAddBonseDTO) {
+                log.warn("远程调用被限流/降级了", throwable);
+                return null;
             }
         };
     }
