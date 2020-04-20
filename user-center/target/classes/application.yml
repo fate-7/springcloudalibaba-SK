@@ -17,12 +17,6 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-#        namespace: ff0f6e94-b1ac-41a8-8adb-5dad8ba6736f
-#    stream:
-#      bindings:
-#        input:
-#          destination: stream-test-topic
-#          content-type: application/json
 
 server:
   port: 8030
@@ -31,3 +25,7 @@ jwt:
   secret: abc
   # 有效期，单位秒，默认2周
   expire-time-in-second: 1209600
+
+wx:
+  appid: "wx0933ee43e78d8d38"
+  secret: "8eee53074648baa750e1d64d4073eed7"

@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient(
         name = "user-center" ,
-//        fallback = UserCenterFeignClientFallback.class,//配置自己的处理
         fallbackFactory = UserCenterFeignClientFallbackFactory.class //可以拿到异常
         )
 public interface UserCenterFeignClient {

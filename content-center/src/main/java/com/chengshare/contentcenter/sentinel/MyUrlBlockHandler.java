@@ -1,4 +1,4 @@
-package com.chengshare.contentcenter.sentineltest;
+package com.chengshare.contentcenter.sentinel;
 
 import com.alibaba.csp.sentinel.adapter.servlet.callback.UrlBlockHandler;
 import com.alibaba.csp.sentinel.slots.block.BlockException;

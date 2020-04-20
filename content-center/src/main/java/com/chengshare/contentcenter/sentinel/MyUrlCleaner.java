@@ -1,4 +1,4 @@
-package com.chengshare.contentcenter.sentineltest;
+package com.chengshare.contentcenter.sentinel;
 
 import com.alibaba.csp.sentinel.adapter.servlet.callback.UrlCleaner;
 import lombok.extern.slf4j.Slf4j;

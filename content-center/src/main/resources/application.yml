@@ -15,7 +15,6 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-    #        namespace: ff0f6e94-b1ac-41a8-8adb-5dad8ba6736f
     #整合sentinel控制台
     sentinel:
       filter:
@@ -23,21 +22,10 @@ spring:
         enabled: true
       transport:
         dashboard: localhost:8020
-#    stream:
-#      bindings:
-#        output:
-#          destination: stream-test-topic
-#          content-type: application/json
-#        my-ouptut:
-#          destination: stream-my-topic
-#          content-type: application/json
+
 
   main:
     allow-bean-definition-overriding: true
-
-#user-center:
-#  ribbon:
-#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 #默认使用懒加载，改为饥饿加载
 ribbon:
@@ -58,8 +46,6 @@ feign:
       # 全局配置 /指定服务名
       default: #user-center:
         LoggerLevel: full
-        requestInterceptors:
-          - com.chengshare.contentcenter.feignclient.interceptor.TokenRelayRequestIntercepor
   #性能增强，使用apache的httpclient而不是默认的urlconnection
   httpclient:
     enabled: true
@@ -81,8 +67,3 @@ jwt:
   secret: abc
   # 有效期，单位秒，默认2周
   expire-time-in-second: 1209600
-
-#mybatis字段映射
-#mybatis:
-#  configuration:
-#    map-underscore-to-camel-case: true
