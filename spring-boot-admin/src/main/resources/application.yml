@@ -1,0 +1,9 @@
+server:
+  port: 8060
+spring:
+  application:
+    name: spring-boot-admin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848

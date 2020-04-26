@@ -26,6 +26,15 @@ jwt:
   # 有效期，单位秒，默认2周
   expire-time-in-second: 1209600
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
 wx:
-  appid: "wx0933ee43e78d8d38"
-  secret: "8eee53074648baa750e1d64d4073eed7"
+  appid: "xx"
+  secret: "xx"
