@@ -58,7 +58,7 @@ public class UserService {
 
     }
 
-    public User me(String token){
+    public User me(String token) {
         Claims claims = this.jwtOperator.getClaimsFromToken(token);
         Integer userId = (Integer) claims.get("id");
         return this.userMapper.selectByPrimaryKey(userId);

@@ -34,7 +34,7 @@ public class GlobalExceptionErrorHandler {
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-class ErrorBody{
+class ErrorBody {
     private String body;
     private int status;
 }

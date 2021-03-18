@@ -25,7 +25,7 @@ import java.util.Date;
 @RabbitListener(queuesToDeclare = @Queue("add-bouns"))
 @Slf4j
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-public class AddBonusListener{
+public class AddBonusListener {
 
     private final UserMapper userMapper;
 
@@ -34,7 +34,7 @@ public class AddBonusListener{
     @RabbitHandler
     @Transactional(rollbackFor = Exception.class)
     public void process(String msg) {
-        log.info("【接收到消息】=> {}" , msg);
+        log.info("【接收到消息】=> {}", msg);
         //当收到消息的时候执行的业务
         UserAddBonusMsgDTO userAddBonusMsgDTO = JSON.parseObject(msg, UserAddBonusMsgDTO.class);
         //1. 为用户加积分
@@ -48,11 +48,11 @@ public class AddBonusListener{
         //2. 记录日志到bonus_event_log表中
         this.bonusEventLogMapper.insert(
                 BonusEventLog.builder()
-                .userId(userAddBonusMsgDTO.getUserId())
-                .value(userAddBonusMsgDTO.getBonus())
-                .event(userAddBonusMsgDTO.getEvent())
-                .createTime(new Date())
-                .description(userAddBonusMsgDTO.getDescription())
-                .build());
+                        .userId(userAddBonusMsgDTO.getUserId())
+                        .value(userAddBonusMsgDTO.getBonus())
+                        .event(userAddBonusMsgDTO.getEvent())
+                        .createTime(new Date())
+                        .description(userAddBonusMsgDTO.getDescription())
+                        .build());
     }
 }

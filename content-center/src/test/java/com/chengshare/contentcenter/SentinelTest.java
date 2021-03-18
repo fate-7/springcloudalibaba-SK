@@ -1,10 +1,7 @@
 package com.chengshare.contentcenter;
 
-import com.chengshare.contentcenter.domain.dto.user.UserDTO;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -13,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
  **/
 
 @Slf4j
-public class SentinelTest extends ContentCenterApplicationTests{
+public class SentinelTest extends ContentCenterApplicationTests {
 
 
     /**

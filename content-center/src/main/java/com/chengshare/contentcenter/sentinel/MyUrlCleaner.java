@@ -9,6 +9,7 @@ import java.util.Arrays;
 
 /**
  * 支持Restful风格的url
+ *
  * @Author fate7
  * @Date 2020/4/12 8:12 下午
  **/
@@ -17,7 +18,7 @@ import java.util.Arrays;
 public class MyUrlCleaner implements UrlCleaner {
     @Override
     public String clean(String s) {
-        log.info("originUrl={}",s);
+        log.info("originUrl={}", s);
         // 让 /shares/1 与 /shares/2 的返回值相同
         // 返回/shares/{number}
 

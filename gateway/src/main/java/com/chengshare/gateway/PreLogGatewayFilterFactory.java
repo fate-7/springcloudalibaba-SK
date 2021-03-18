@@ -13,22 +13,23 @@ import org.springframework.web.server.ServerWebExchange;
  * filter的生命周期
  * pre: gateway请求转发之前
  * post: gateway请求转发之后
- *
+ * <p>
  * 实现的两种方式
  * 1. AbstractGatewayFilterFactory
  * 2. AbstractNameValueGatewayFilterFactory
- *
+ * <p>
  * 核心api
  * exchange.getRequest().mutate().xxx
  * exchange.mutate().request
  * chain.filter
- *
+ * <p>
  * 注意点：名字一定是GatewayFilterFactory结尾
  * 配置写前缀： - PreLog=a, b a是name， b是value
- *
+ * <p>
  * 过滤器执行顺序：order越小越先执行
  * 局部过滤器从第一个配置order从1开始递增
  * 局部过滤器自定义order -new OrderedGatewayFilter
+ * <p>
  * @Author fate7
  * @Date 2020/4/16 11:37 上午
  **/

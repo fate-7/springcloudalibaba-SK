@@ -23,7 +23,7 @@ public class BonusController {
     private final UserService userService;
 
     @PutMapping("/add-bonus")
-    public User addBonus(@RequestBody UserAddBonseDTO userAddBonseDTO){
+    public User addBonus(@RequestBody UserAddBonseDTO userAddBonseDTO) {
         Integer userId = userAddBonseDTO.getUserId();
         this.userService.addBonus(
                 UserAddBonusMsgDTO.builder()

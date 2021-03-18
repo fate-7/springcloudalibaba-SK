@@ -15,14 +15,15 @@ import org.springframework.web.bind.annotation.RequestBody;
  **/
 
 @FeignClient(
-        name = "user-center" ,
+        name = "user-center",
         fallbackFactory = UserCenterFeignClientFallbackFactory.class //可以拿到异常
-        )
+)
 public interface UserCenterFeignClient {
 
     /**
      * 调用user-center服务的url
      * http://user-center/users/{id}
+     *
      * @param id
      * @return
      */

@@ -36,7 +36,7 @@ public class AuthAspect {
     }
 
     private void checkToken() {
-        try{
+        try {
             //1. 从header中获取token
             HttpServletRequest request = getHttpServletRequest();
 
@@ -74,7 +74,7 @@ public class AuthAspect {
             String role = (String) httpServletRequest.getAttribute("role");
 
             //拿到方法的注解中的值
-            MethodSignature signature = (MethodSignature)point.getSignature();
+            MethodSignature signature = (MethodSignature) point.getSignature();
             Method method = signature.getMethod();
             CheckAuthorization checkAuthorization = method.getAnnotation(CheckAuthorization.class);
             String value = checkAuthorization.value();

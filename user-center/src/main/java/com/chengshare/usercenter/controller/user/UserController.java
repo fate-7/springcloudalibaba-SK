@@ -59,11 +59,13 @@ public class UserController {
 
     @GetMapping("/bonus-logs")
     @CheckLogin
-    public List<BonusDTO>  bonusLogs(@RequestHeader("X-Token") String token) {
+    public List<BonusDTO> bonusLogs(@RequestHeader("X-Token") String token) {
         return userService.bonusLogs(token);
     }
+
     /**
      * 模拟生成token
+     *
      * @return
      */
     @GetMapping("/gen-token")
@@ -102,11 +104,11 @@ public class UserController {
         return LoginRespDTO.builder()
                 .user(
                         UserRespDTO.builder()
-                        .id(user.getId())
-                        .avatarUrl(user.getAvatarUrl())
-                        .bonus(user.getBonus())
-                        .wxNickname(user.getWxNickname())
-                        .build()
+                                .id(user.getId())
+                                .avatarUrl(user.getAvatarUrl())
+                                .bonus(user.getBonus())
+                                .wxNickname(user.getWxNickname())
+                                .build()
                 )
                 .token(
                         JwtTokenRespDTO.builder()

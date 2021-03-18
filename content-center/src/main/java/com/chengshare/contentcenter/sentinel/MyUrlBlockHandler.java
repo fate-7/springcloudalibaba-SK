@@ -29,9 +29,9 @@ public class MyUrlBlockHandler implements UrlBlockHandler {
         ErrorMsg msg = null;
         if (e instanceof FlowException) {
             msg = ErrorMsg.builder().status(100).msg("限流了").build();
-        } else if(e instanceof DegradeException) {
+        } else if (e instanceof DegradeException) {
             msg = ErrorMsg.builder().status(101).msg("降级了").build();
-        } else if(e instanceof ParamFlowException) {
+        } else if (e instanceof ParamFlowException) {
             msg = ErrorMsg.builder().status(102).msg("热点参数限流了").build();
         } else if (e instanceof SystemBlockException) {
             msg = ErrorMsg.builder().status(103).msg("系统规则").build();

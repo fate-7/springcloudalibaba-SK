@@ -1,7 +1,6 @@
 package com.chengshare.contentcenter.domain.dto.enums;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 
 /**
@@ -10,7 +9,7 @@ import lombok.Getter;
  **/
 @Getter
 @AllArgsConstructor
-public enum  AuditStatusEnum {
+public enum AuditStatusEnum {
 
     /**
      * 待审核
